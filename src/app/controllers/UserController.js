@@ -28,7 +28,7 @@ class UserController {
     })
 
     if (userExists) {
-      return response.status(400).json({ error: 'User already exits' })
+      return response.status(409).json({ error: 'User already exits' })
     }
 
     // Para criar o usuario
