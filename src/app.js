@@ -8,7 +8,9 @@ import './database'
 class App {
   constructor() {
     this.app = express()
-    this.app.use(cors())
+    this.app.use(cors({
+      credentials: true,
+    }))
 
     this.middlewares()
     this.routes()

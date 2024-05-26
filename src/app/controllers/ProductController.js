@@ -1,6 +1,6 @@
 import * as Yup from 'yup'
-import Product from '../models/Product'
 import Category from '../models/Category'
+import Product from '../models/Product'
 import User from '../models/User'
 
 class ProductController {
@@ -26,7 +26,7 @@ class ProductController {
     const { filename: path } = request.file
     const { name, price, category_id, offer } = request.body
 
-    const product = await Product.create({
+    const products = await Product.create({
       name,
       price,
       category_id,
@@ -34,7 +34,7 @@ class ProductController {
       offer,
     })
 
-    return response.json(product)
+    return response.json(products)
   }
 
   async index(request, response) {
