@@ -1,4 +1,4 @@
-##  Banco de Dados - Web Code Borguer
+# Banco de Dados - Web Code Borguer
 
 Este projeto de banco de dados utiliza um sistema de gerenciamento de dados com suporte a PostgreSQL, MongoDB e armazenamento de imagens. Ele conta com migrações que definem a estrutura de tabelas para usuários, produtos, categorias, entre outros. Além disso, o sistema realiza verificações para evitar duplicidade de usuários com o mesmo email e gerencia o upload de imagens para produtos.
 
@@ -32,14 +32,13 @@ WEB-ORDER-CODE/ </br>
 
 - Docker: Para rodar os containers do PostgreSQL e MongoDB.
 - Node.js: Para rodar o projeto localmente e aplicar as migrações.
-## Configuração
-# Banco de Dados
+## Configurações - Banco de dados
 - As migrações para o banco de dados estão localizadas no diretório src/database/migrations. Cada arquivo representa uma migração que cria ou altera tabelas no PostgreSQL. As migrações incluem:</br>
 - Tabela de usuários com verificação de emails duplicados.
 - Tabela de produtos com suporte a uploads de imagem.
 - Tabela de categorias para organização dos produtos.
 
-### Configuração dos Contêineres com Docker
+## Configuração dos Contêineres com Docker
 
 Para criar e rodar os contêineres do MongoDB e PostgreSQL, utilize os seguintes comandos:
 
@@ -58,6 +57,8 @@ Após criar o contêiner do PostgreSQL, você pode usar o Postbird para criar o 
 Após configurar o banco de dados, aplique as migrações com o seguinte comando:
 
 yarn sequelize-cli db:migrate
+
+## Comandos para utilizar a aplicação
 
 1- Iniciando o Projeto
 
