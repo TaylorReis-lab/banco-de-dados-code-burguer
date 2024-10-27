@@ -81,3 +81,5 @@ Para mais informações, entre em contato com o desenvolvedor:
 Nome: Taylor Reis </br>
 Email: taylor-reis@outlook.com </br>
 LinkedIn: https://www.linkedin.com/in/taylor--reis/ </br>
+
+> **Status do Projeto**: 🚧 Em Desenvolvimento
